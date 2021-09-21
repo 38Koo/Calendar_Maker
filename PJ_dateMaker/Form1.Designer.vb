@@ -22,31 +22,31 @@ Partial Class Form1
     'コード エディターを使って変更しないでください。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.dgv1 = New System.Windows.Forms.DataGridView()
+        Me.dgvCalendar = New System.Windows.Forms.DataGridView()
         Me.txtDate = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnCopy = New System.Windows.Forms.Button()
+        Me.btnClear = New System.Windows.Forms.Button()
         Me.lblDate = New System.Windows.Forms.Label()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        CType(Me.dgv1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.btnLastMonth = New System.Windows.Forms.Button()
+        Me.btnNextMonth = New System.Windows.Forms.Button()
+        Me.btnToday = New System.Windows.Forms.Button()
+        CType(Me.dgvCalendar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'dgv1
+        'dgvCalendar
         '
-        Me.dgv1.AllowUserToAddRows = False
-        Me.dgv1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgv1.Location = New System.Drawing.Point(26, 210)
-        Me.dgv1.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
-        Me.dgv1.Name = "dgv1"
-        Me.dgv1.RowHeadersVisible = False
-        Me.dgv1.RowHeadersWidth = 82
-        Me.dgv1.RowTemplate.Height = 21
-        Me.dgv1.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.dgv1.Size = New System.Drawing.Size(1138, 790)
-        Me.dgv1.TabIndex = 1000
-        Me.dgv1.TabStop = False
+        Me.dgvCalendar.AllowUserToAddRows = False
+        Me.dgvCalendar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvCalendar.Location = New System.Drawing.Point(26, 210)
+        Me.dgvCalendar.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
+        Me.dgvCalendar.Name = "dgvCalendar"
+        Me.dgvCalendar.RowHeadersVisible = False
+        Me.dgvCalendar.RowHeadersWidth = 82
+        Me.dgvCalendar.RowTemplate.Height = 21
+        Me.dgvCalendar.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.dgvCalendar.Size = New System.Drawing.Size(1138, 790)
+        Me.dgvCalendar.TabIndex = 1000
+        Me.dgvCalendar.TabStop = False
         '
         'txtDate
         '
@@ -59,25 +59,25 @@ Partial Class Form1
         Me.txtDate.Size = New System.Drawing.Size(832, 752)
         Me.txtDate.TabIndex = 1
         '
-        'Button1
+        'btnCopy
         '
-        Me.Button1.Location = New System.Drawing.Point(1437, 906)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(836, 86)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "コピー"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnCopy.Location = New System.Drawing.Point(1437, 906)
+        Me.btnCopy.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
+        Me.btnCopy.Name = "btnCopy"
+        Me.btnCopy.Size = New System.Drawing.Size(836, 86)
+        Me.btnCopy.TabIndex = 2
+        Me.btnCopy.Text = "コピー"
+        Me.btnCopy.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnClear
         '
-        Me.Button2.Location = New System.Drawing.Point(1437, 1004)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(836, 86)
-        Me.Button2.TabIndex = 3
-        Me.Button2.Text = "リセット"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnClear.Location = New System.Drawing.Point(1437, 1004)
+        Me.btnClear.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(836, 86)
+        Me.btnClear.TabIndex = 3
+        Me.btnClear.Text = "リセット"
+        Me.btnClear.UseVisualStyleBackColor = True
         '
         'lblDate
         '
@@ -90,35 +90,35 @@ Partial Class Form1
         Me.lblDate.TabIndex = 4
         Me.lblDate.Text = "2020/01"
         '
-        'Button3
+        'btnLastMonth
         '
-        Me.Button3.Location = New System.Drawing.Point(319, 104)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(72, 54)
-        Me.Button3.TabIndex = 5
-        Me.Button3.Text = "Button3"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnLastMonth.Location = New System.Drawing.Point(319, 104)
+        Me.btnLastMonth.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
+        Me.btnLastMonth.Name = "btnLastMonth"
+        Me.btnLastMonth.Size = New System.Drawing.Size(72, 54)
+        Me.btnLastMonth.TabIndex = 5
+        Me.btnLastMonth.Text = "Button3"
+        Me.btnLastMonth.UseVisualStyleBackColor = True
         '
-        'Button4
+        'btnNextMonth
         '
-        Me.Button4.Location = New System.Drawing.Point(758, 104)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(72, 54)
-        Me.Button4.TabIndex = 1001
-        Me.Button4.Text = "Button4"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btnNextMonth.Location = New System.Drawing.Point(758, 104)
+        Me.btnNextMonth.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
+        Me.btnNextMonth.Name = "btnNextMonth"
+        Me.btnNextMonth.Size = New System.Drawing.Size(72, 54)
+        Me.btnNextMonth.TabIndex = 1001
+        Me.btnNextMonth.Text = "Button4"
+        Me.btnNextMonth.UseVisualStyleBackColor = True
         '
-        'Button5
+        'btnToday
         '
-        Me.Button5.Location = New System.Drawing.Point(913, 104)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(72, 54)
-        Me.Button5.TabIndex = 1002
-        Me.Button5.Text = "Button5"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.btnToday.Location = New System.Drawing.Point(913, 104)
+        Me.btnToday.Margin = New System.Windows.Forms.Padding(7, 6, 7, 6)
+        Me.btnToday.Name = "btnToday"
+        Me.btnToday.Size = New System.Drawing.Size(72, 54)
+        Me.btnToday.TabIndex = 1002
+        Me.btnToday.Text = "Button5"
+        Me.btnToday.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -126,29 +126,29 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.ClientSize = New System.Drawing.Size(2740, 1783)
-        Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.btnToday)
+        Me.Controls.Add(Me.btnNextMonth)
+        Me.Controls.Add(Me.btnLastMonth)
         Me.Controls.Add(Me.lblDate)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnClear)
+        Me.Controls.Add(Me.btnCopy)
         Me.Controls.Add(Me.txtDate)
-        Me.Controls.Add(Me.dgv1)
+        Me.Controls.Add(Me.dgvCalendar)
         Me.Margin = New System.Windows.Forms.Padding(2, 4, 2, 4)
         Me.Name = "Form1"
         Me.Text = "以下の日程でご都合いかがでしょうか？"
-        CType(Me.dgv1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvCalendar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents dgv1 As DataGridView
+    Friend WithEvents dgvCalendar As DataGridView
     Friend WithEvents txtDate As TextBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnCopy As Button
+    Friend WithEvents btnClear As Button
     Friend WithEvents lblDate As Label
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
+    Friend WithEvents btnLastMonth As Button
+    Friend WithEvents btnNextMonth As Button
+    Friend WithEvents btnToday As Button
 End Class
